@@ -82,6 +82,12 @@ dotnet build -c Release
 
 Import `Solution.zip` into your environment via **Power Apps > Solutions > Import**.
 
+**OR**
+-  Use ABNControlSolution.zip file
+-  Download it
+-  Navigate to your Power Platform Environment
+-  Import Solution > Select downloaded BNControlSolution.zip file
+
 ## Adding the control to a form
 
 1. Open the form designer for the table that has your ABN column.
