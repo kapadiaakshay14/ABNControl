@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Cowork"
+           constructor="ABNControl"
+           version="1.0.0"
+           display-name-key="ABNControl_Display_Key"
+           description-key="ABNControl_Desc_Key"
+           control-type="virtual">
+    <!--
+      external-service-usage: required for AppSource certification.
+      Set to "false" because the control does not call any external services.
+    -->
+    <external-service-usage enabled="false" />
+
+    <!-- Bound primary field: the ABN value (string, single line of text) -->
+    <property name="abnValue"
+              display-name-key="ABNValue_Display_Key"
+              description-key="ABNValue_Desc_Key"
+              of-type="SingleLine.Text"
+              usage="bound"
+              required="true" />
+
+    <!-- Optional placeholder text -->
+    <property name="placeholderText"
+              display-name-key="Placeholder_Display_Key"
+              description-key="Placeholder_Desc_Key"
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false"
+              default-value="e.g. 51 824 753 556" />
+
+    <!-- Optional: allow disabling the format-on-blur behavior -->
+    <property name="autoFormat"
+              display-name-key="AutoFormat_Display_Key"
+              description-key="AutoFormat_Desc_Key"
+              of-type="TwoOptions"
+              usage="input"
+              required="false"
+              default-value="true" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="css/ABNControl.css" order="1" />
+      <resx path="strings/ABNControl.1033.resx" version="1.0.0" />
+
+      <!-- React + Fluent UI peer dependencies for a virtual control -->
+      <platform-library name="React" version="16.14.0" />
+      <platform-library name="Fluent" version="9.46.2" />
+    </resources>
+
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

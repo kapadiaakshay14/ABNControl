@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+
+  <data name="ABNControl_Display_Key">
+    <value>ABN Control</value>
+  </data>
+  <data name="ABNControl_Desc_Key">
+    <value>Formats and validates an Australian Business Number (ABN).</value>
+  </data>
+  <data name="ABNValue_Display_Key">
+    <value>ABN</value>
+  </data>
+  <data name="ABNValue_Desc_Key">
+    <value>The bound field that stores the ABN value.</value>
+  </data>
+  <data name="Placeholder_Display_Key">
+    <value>Placeholder</value>
+  </data>
+  <data name="Placeholder_Desc_Key">
+    <value>Placeholder text shown when the field is empty.</value>
+  </data>
+  <data name="AutoFormat_Display_Key">
+    <value>Auto-format</value>
+  </data>
+  <data name="AutoFormat_Desc_Key">
+    <value>Automatically format the ABN as XX XXX XXX XXX while typing.</value>
+  </data>
+  <data name="Error_Length">
+    <value>ABN must be exactly 11 digits.</value>
+  </data>
+  <data name="Error_NonDigits">
+    <value>ABN can only contain digits and spaces.</value>
+  </data>
+</root>

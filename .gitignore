@@ -1,0 +1,17 @@
+# Node / build output
+node_modules/
+out/
+bin/
+obj/
+*.log
+npm-debug.log*
+
+# Generated PCF types
+**/generated/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

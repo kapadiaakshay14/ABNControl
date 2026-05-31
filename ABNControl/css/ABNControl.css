@@ -1,0 +1,18 @@
+/* ABN Control styling - intentionally minimal so Fluent UI tokens drive the look */
+
+.Cowork\.ABNControl-root {
+  width: 100%;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", -apple-system,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.Cowork\.ABNControl-field {
+  width: 100%;
+}
+
+.Cowork\.ABNControl-error {
+  color: #a4262c;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 16px;
+}
